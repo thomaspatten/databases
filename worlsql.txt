@@ -1,0 +1,6 @@
+1.	Select count (*) FROM city WHERE CountryCode=’USA’
+2.	Select population,lifeexpectancy from country where code= ‘arg’
+
+4) Select city.name from country LEFT JOIN city ON country.capital =city.id WHERE country.code =’ESP’
+8) SELECT * FROM country WHERE lifeexpectancy  IS NOT NULL ORDER BY lifeexpectancy ASC LIMIT 101;
+17) SELECT *FROM countrylanguage WHERE language =’French’
