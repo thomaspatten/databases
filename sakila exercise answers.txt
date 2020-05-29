@@ -1,0 +1,28 @@
+1) select all actors from the table
+SELECT first_name,last_name FROM actor;
+2)find all the actors with the first name john 
+SELECT first_name,last_name FROM actor WHERE first_name='john'
+3) find all the actors with the last name neeson
+SELECT first_name,last_name FROM actor WHERE last_name='neeson'
+4) find all the actors with id numbers divisable by 10
+SELECT first_name,last_name FROM actor WHERE actor_id/10
+5)what is the description of the movie with the id of 100
+SELECT description FROM film WHERE film_id=100
+6)find every movie with rating of r
+SELECT title FROM film WHERE rating='r'
+7)find every movie except those with rating r 
+SELECT title FROM film WHERE rating!='r'
+8)find the 10 shortest movies
+SELECT * FROM film WHERE length IS NOT NULL ORDER BY lenght DESC LIMIT 10;
+9)NOW RETURN ONLY THE MOVIE TITLES 
+SELECT (title) FROM film WHERE lenght IS NOT NULL ORDER BY lenght DESC LIMIT 10;
+10)find all movies with deleted scenes 
+SELECT * FROM film WHERE special_features='deleted scenes'
+11)WHAT LAST NAMES ARE NOT REPEATED
+SELECT DISTINCT(last_name) from actor
+12) which last names appear more than once
+SELECT(last_name) from actor group by (last_name) having count (*) >1;
+13)which actor has appeared in the most films 
+SELECT actor_id FROM film_actor GROUP BY actor_id ORDER BY COUNT(*) DESC LIMIT 1;
+14)is academy dinoasur available for rent from store 1
+??
